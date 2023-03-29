@@ -1,13 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=San Francisco');
+
 body {
+  font-family: 'San Francisco', Arial, sans-serif;
+  font-size: 16px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #f2f2f2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Navigation Bar */
+
+.navbar {
+  background-color: white;
+  padding: 0 20px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+}
+
+.navbar-brand img {
+  max-width: 50px;
+  height: auto;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Main Content */
+
+.landing-page {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.landing-page h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.landing-page p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+/* Menu */
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+  width: calc(25% - 20px);
+  text-align: center;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.menu-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.menu-item p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.menu-item .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: auto;
+}
+
+@media (max-width: 991px) {
+  .menu-item {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 767px) {
+  .menu-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 575px) {
+  .menu-item {
+    width: 100%;
+  }
+}
+
+/* Footer */
+
+footer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-text {
+  margin: 0;
+  padding: 0;
+  color: #999;
+}
+
+.footer-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
 }
